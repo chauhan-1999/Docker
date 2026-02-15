@@ -1,0 +1,21 @@
+# ------------------- Stage 1: Build Stage ------------------------------
+#base img 994MB ~ 1.46GB
+FROM python:3.7 AS builder
+
+WORKDIR /app
+
+## only dependencies and libraries needed now
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# ------------------- Stage 2: Final Stage ------------------------------
+#base img 125MB ~ 216MB [final img]
+#use small img now
+FROM python:3.7-slim
+WORKDIR /app
+#copy installed packages from builder stage to your curr pkgs
+COPY --from=builder /usr/local/lib/python3.7/site-packages/ /usr/local/lib/python3.7/site-packages/
+COPY . .
+
+## CMD or ENTRYPOINT && app.py or run.py whatever you like
+ENTRYPOINT ["python","run.py"]

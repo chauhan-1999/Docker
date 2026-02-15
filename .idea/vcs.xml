@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/Expenses-Tracker-WebApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/django-notes-app" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/projects/flask-app-ecs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/projects/node-todo-cicd" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/projects/two-tier-flask-app" vcs="Git" />

@@ -1,0 +1,7 @@
+projects/two-tier-flask-app/volumes/
+nohup.out
+.idea/
+projects/two-tier-flask-app/mysql-data/
+**/mysql-data/
+**/data/mysql/
+**/mysql.sock

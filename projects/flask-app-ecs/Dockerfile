@@ -11,5 +11,9 @@ COPY . .
 RUN pip install -r requirements.txt
 
 # serve the app / run the app (keep it running)
-CMD ["python","run.py"]
+CMD ["python","app.py"]
+
+
+
+
 
